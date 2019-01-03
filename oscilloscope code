@@ -9,12 +9,6 @@ void setup() {
 
 void loop() {
     static int numChans = 1;
-   /* while(Serial.available() > 0) {
-        char c = Serial.read();
-        if(c >= '1' && c <= '6') {
-            numChans = c - '0';
-        }
-    }*/
     PrintInt(analogRead(A0));
     Serial.write('\r'); // CR
 }
